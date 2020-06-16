@@ -8,7 +8,7 @@ Will start a local http listener, and forward any http calls as sftp to the serv
 
 Set the swupd mirror to `swupd mirror --set http://localhost:7777`, or to the values you specified when starting the server if default values where not used.
 
-To compile and executable binary of the package:
+To compile an executable binary of the package:
 
 ```bash
 env GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o sftp && upx --brute sftp
